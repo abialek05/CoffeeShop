@@ -1,0 +1,20 @@
+﻿@model CoffeeShop.Database.Data.CMS.GrindLevel
+
+@{
+    Layout = "~/Views/Shared/_ItemLayout.cshtml";
+    ViewData["Title"] = "Delete";
+}
+<h1>Usuwanie</h1>
+
+<h3>Jesteś pewien, że chcesz to usunąć?</h3>
+<div>
+    <h4>Typ produktu</h4>
+    <h4>@Html.DisplayFor(model => model.GrindName)</h4>
+    <hr />
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdGrindLevel" />
+        <input type="submit" value="Usuń" class="mdc-button mdc-button--outlined outlined-button--secondary mdc-ripple-upgraded" /> |
+        <a asp-action="Index" class="mdc-button mdc-button--outlined outlined-button--dark mdc-ripple-upgraded">Powrót do listy</a>
+    </form>
+</div>

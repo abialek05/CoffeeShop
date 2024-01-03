@@ -1,0 +1,80 @@
+﻿@model IEnumerable<CoffeeShop.Database.Data.CMS.Training>
+
+@{
+    Layout = "_ItemLayout";
+}
+
+<!DOCTYPE html>
+<style>
+    th{
+        text-align: left;
+    }
+    td{
+        text-align: left;
+    }
+</style>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Szkolenia</title>
+</head>
+<body>
+<p>
+        <a asp-action="Create" class="card-title card-padding pb-0">Dodaj nowe szkolenie</a>
+</p>
+<table class="table">
+    <thead>
+            <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TrainingName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Spots)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrainingName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Spots)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsActive)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdTraining">Edytuj</a> |
+                <a asp-action="Details" asp-route-id="@item.IdTraining">Szczegóły</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdTraining">Usuń</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</body>
+</html>

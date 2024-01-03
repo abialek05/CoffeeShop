@@ -1,0 +1,52 @@
+﻿@model IEnumerable<CoffeeShop.Database.Data.CMS.GrindLevel>
+
+@{
+    Layout = "_ItemLayout";
+}
+
+
+<body>
+    <h1>Poziomy zmielenia</h1>
+
+    <p>
+        <a asp-action="Create">Dodaj nowy</a>
+    </p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.GrindName)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+            <th style="text-align:center"></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.GrindName)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.IsActive)
+            </td>
+            <td style="text-align:center">
+                <a asp-action="Edit" asp-route-id="@item.IdGrindLevel">Edytuj</a> |
+                <a asp-action="Details" asp-route-id="@item.IdGrindLevel">Szczegóły</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdGrindLevel">Usuń</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</body>
+

@@ -1,0 +1,77 @@
+﻿@model IEnumerable<CoffeeShop.Database.Data.CMS.Training>
+@{
+    ViewData["Title"] = "Szkolenia";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="home-slider owl-carousel">
+    <div class="slider-item" style="background-image: url(images/bg_1.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+                <div class="col-md-8 col-sm-12 text-center ftco-animate">
+                    <span class="subheading">WITAJ</span>
+                    <h1 class="mb-4">Witaj u Zafusowanych!</h1>
+                    <p class="mb-4 mb-md-5">Najlepszej jakości kawa premium oraz szkolenia dla baristów.</p>
+                    <p><a asp-controller="Training" asp-action="Index" class="btn btn-primary p-3 px-xl-4 py-xl-3">Szkolenia</a> <a asp-controller="Shop" asp-action="Index" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Produkty</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-item" style="background-image: url(images/bg_2.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+                <div class="col-md-8 col-sm-12 text-center ftco-animate">
+                    <span class="subheading">WITAJ</span>
+                    <h1 class="mb-4">Witaj u Zafusowanych!</h1>
+                    <p class="mb-4 mb-md-5">Najlepszej jakości kawa premium oraz szkolenia dla baristów.</p>
+                    <p><a asp-controller="Training" asp-action="Index" class="btn btn-primary p-3 px-xl-4 py-xl-3">Szkolenia</a> <a asp-controller="Shop" asp-action="Index" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Produkty</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-item" style="background-image: url(images/bg_3.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+                <div class="col-md-8 col-sm-12 text-center ftco-animate">
+                    <span class="subheading">WITAJ</span>
+                    <h1 class="mb-4">Witaj u Zafusowanych!</h1>
+                    <p class="mb-4 mb-md-5">Najlepszej jakości kawa premium oraz szkolenia dla baristów.</p>
+                    <p><a asp-controller="Training" asp-action="Index" class="btn btn-primary p-3 px-xl-4 py-xl-3">Szkolenia</a> <a asp-controller="Shop" asp-action="Index" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Produkty</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ftco-section">
+    <div class="container">
+        <div class="row d-flex">
+            @foreach (var training in Model)
+            {
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry align-self-stretch">
+                        <a class="block-20">
+                            <img src="@training.PhotoURL" style="block-size: 250px">
+                        </a>
+                        <div class="text py-4 d-block">
+                            <div class="meta">
+                                <div><a href="#">@training.StartDate</a></div>
+                                <div><a href="#">Miejsca: </a></div>
+                                <div><a href="#" class="meta-chat">@training.Spots</a></div>
+                            </div>
+                            <h3 class="heading mt-2"><a href="#">@training.TrainingName</a></h3>
+                            <p>@training.Description</p>
+                        </div>
+                    </div>
+                </div>
+            }
+            </div>
+        </div>
+</section>

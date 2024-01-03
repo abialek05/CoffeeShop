@@ -1,0 +1,116 @@
+﻿@{
+	ViewData ["Title"] = "Cart";
+	Layout = "_Layout";
+}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Koszyk</title>
+   
+  </head>
+  <body>
+    <section class="home-slider owl-carousel">
+
+      <div class="slider-item" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text justify-content-center align-items-center">
+
+            <div class="col-md-7 col-sm-12 text-center ftco-animate">
+                <h1 class="mb-3 mt-5 bread">Koszyk</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Główna</a></span> <span>Koszyk</span></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <section class="ftco-section ftco-cart">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-12 ftco-animate">
+                    <div class="cart-list">
+                        <table class="table">
+                            <thead class="thead-primary">
+                              <tr class="text-center">
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                                <th>Produkt</th>
+                                <th>Cena</th>
+                                <th>Ilość</th>
+                                <th>Razem</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="text-center">
+                                <td class="product-remove"><a href="#"><span class="icon-close"></span></a></td>
+
+                                <td class="image-prod"><img src="~/lib/images/menu-4.jpg" class="img"></td>
+
+                                <td class="product-name">
+                                    <h3>Capuccino</h3>                                    
+                                </td>
+
+                                    <td class="price">8,00 zł</td>
+
+                                <td class="quantity">
+                                    <div class="input-group mb-3">
+                                     <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+                                  </div>
+                              </td>
+
+                                    <td class="total">8,00 zł</td>
+                              </tr><!-- END TR-->
+
+                              <tr class="text-center">
+                                <td class="product-remove"><a href="#"><span class="icon-close"></span></a></td>
+
+                                    <td class="image-prod"><img src="~/lib/images/menu-2.jpg" class="img"></td>
+
+                                <td class="product-name">
+                                        <h3>Espresso</h3>                                    
+                                </td>
+
+                                <td class="price">7,00zł</td>
+
+                                <td class="quantity">
+                                    <div class="input-group mb-3">
+                                     <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+                                  </div>
+                              </td>
+
+                                <td class="total">7,00zł</td>
+                              </tr><!-- END TR-->
+                            </tbody>
+                          </table>
+                      </div>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col col-lg-3 col-md-6 mt-5 cart-wrap ftco-animate">
+                    <div class="cart-total mb-3">
+                        <h3>Podsumowanie</h3>
+                        <p class="d-flex">
+                            <span>Cena</span>
+                            <span>15,00 zł</span>
+                        </p>
+                        <p class="d-flex">
+                            <span>Dostawa</span>
+                            <span>5,00 zł</span>
+                        </p>                        
+                        <hr>
+                        <p class="d-flex total-price">
+                            <span>Razem</span>
+                            <span>20,00 zł</span>
+                        </p>
+                    </div>
+                    <p class="text-center"><a href="checkout.html" class="btn btn-primary py-3 px-4">Zamów</a></p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+ 
+  </body>
+</html>

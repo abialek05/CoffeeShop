@@ -1,0 +1,85 @@
+﻿@model IEnumerable<CoffeeShop.Database.Data.CMS.Product>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_ItemLayout.cshtml";
+}
+
+<h1>Produkty</h1>
+
+<p>
+    <a asp-action="Create">Stwórz nowy</a>
+</p>
+<table class="table">
+    <thead style="text-align:center">
+        <tr>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th style="text-align:center">
+                Typ produktu
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.CountryOrigin)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.Description)
+            </th>           
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.FlavorNotes)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.Weight)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th style="text-align:center">
+                Poziom zmielenia
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody style="text-align:center">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.ProductType.Description)
+                </td>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.CountryOrigin)
+                </td>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>                
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.FlavorNotes)
+                </td>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.Weight)
+                </td>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.GrindLevel.Description)
+                </td>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.IsActive)
+                </td>
+                <td style="text-align:center">
+                    <a asp-action="Edit" asp-route-id="@item.IdProduct">Edytuj</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdProduct">Szczegóły</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdProduct">Usuń</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

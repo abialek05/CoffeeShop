@@ -1,0 +1,66 @@
+﻿
+<!-- partial:partials/_sidebar.html -->
+<aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
+    <div class="mdc-drawer__header" style="margin:10px;">
+        <a asp-area="" asp-controller="Home" asp-action="Index" class="brand-logo">
+            <img src="~/lib/materialize/template/assets/images/logo-black-nobg-no-slogan.svg" class="brand-logo">
+        </a>
+    </div>
+    <div class="mdc-drawer__content">
+        <div style="height: 20px;"></div>
+        <div class="mdc-list-group">
+            <nav class="mdc-list mdc-drawer-menu">
+                <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" asp-area="" asp-area="" asp-controller="Home" asp-action="Index">
+                        <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">home</i>
+                        Główna
+                    </a>
+                </div>
+                <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link"  asp-area="" asp-controller="Training" asp-action="Index">
+                        <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
+                        Szkolenia
+                    </a>
+                </div>
+                <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" asp-area="" asp-controller="Page" asp-action="Index">
+                        <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">description</i>
+                        Strony
+                    </a>
+                </div>               
+                <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" asp-area="" asp-controller="Product" asp-action="Index">
+                        <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i>
+                        Produkty
+                    </a>
+                </div>                
+                <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="sample-page-submenu">
+                        <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pages</i>
+                        Do produktów
+                        <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+                    </a>
+                    <div class="mdc-expansion-panel" id="sample-page-submenu">
+                        <nav class="mdc-list mdc-drawer-submenu">
+                            <div class="mdc-list-item mdc-drawer-item">
+                                <a class="mdc-drawer-link" asp-area="" asp-controller="GrindLevel" asp-action="Index">
+                                    Poziom zmielenia
+                                </a>
+                            </div>
+                            <div class="mdc-list-item mdc-drawer-item">
+                                <a class="mdc-drawer-link" asp-area="" asp-controller="ProductType" asp-action="Index">
+                                    Typ produktu
+                                </a>
+                            </div>                           
+                        </nav>
+                    </div>
+                </div>               
+            </nav>
+        </div>
+        <div class="profile-actions">
+            <a href="javascript:;">Ustawienia</a>
+            <span class="divider"></span>
+            <a href="javascript:;">Wyloguj</a>
+        </div>
+    </div>
+</aside>

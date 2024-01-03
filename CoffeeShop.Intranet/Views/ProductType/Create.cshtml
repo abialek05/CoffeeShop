@@ -1,0 +1,42 @@
+﻿@model CoffeeShop.Database.Data.CMS.ProductType
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_ItemLayout.cshtml";
+}
+
+<h4 style="padding:20px">Dodaj typ produktu</h4>
+<hr />
+<div class="row" style="padding:20px">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="mdc-text-field">
+                <label asp-for="TypeName" class="mdc-floating-label"></label>
+                <input asp-for="TypeName" class="mdc-text-field__input" id="text-field-hero-input" />
+                <span asp-validation-for="TypeName" class="text-danger"></span>
+            </div>
+            <div class="mdc-text-field" style="margin-top:30px">
+                <label asp-for="Description" class="mdc-floating-label"></label>
+                <input asp-for="Description" class="mdc-text-field__input" id="text-field-hero-input" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check" style="margin-top:30px">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsActive" /> @Html.DisplayNameFor(model => model.IsActive)
+                </label>
+            </div>
+            <div class="form-group"style="margin-top:30px">
+                <input type="submit" value="Dodaj" class="mdc-button mdc-button--raised filled-button--light" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="mdc-button mdc-button--outlined outlined-button--dark mdc-ripple-upgraded">Powrót do listy</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

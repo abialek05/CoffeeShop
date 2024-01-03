@@ -1,0 +1,17 @@
+﻿@model IEnumerable<CoffeeShop.Database.Data.CMS.ProductType>
+
+<div class="col-md-12 nav-link-wrap mb-5">
+    <div class="nav ftco-animate nav-pills justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        @foreach (var item in Model)
+        {
+            @if (item.IsActive == true)
+            {
+                <div>@Html.ActionLink(item.TypeName, "Index", "Shop", new { id = item.IdProductType }, new { @class = "nav-link" })</div>
+            }
+            else
+            {                
+            }
+        }
+    </div>
+</div>
+

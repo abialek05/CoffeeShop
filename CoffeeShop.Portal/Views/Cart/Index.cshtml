@@ -1,0 +1,75 @@
+﻿@model CoffeeShop.Portal.Models.Shop.CartData
+@{
+    ViewData["Title"] = "Koszyk";
+    Layout = "~/Views/Shared/_CartLayout.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 ftco-animate">
+            <div class="cart-list">
+                <table class="table">
+                    <thead class="thead-primary">
+                        <tr class="text-center">
+                            <th>&nbsp;</th>
+                            <th>Produkt</th>
+                            <th>Cena</th>
+                            <th>Ilość</th>
+                            <th>Razem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model.CartItems)
+                        {
+                            <tr class="text-center">
+                                <td>
+                                    <img src="@item.Product.PhotoURL" style="block-size: 150px">
+                                    </td>
+                                <td class="product-name">
+                                    <h3>@Html.ActionLink(item.Product.ProductName, "Details", "Shop", new{id=item.Product.IdProduct}, null)</h3>
+                                </td>
+                                <td class="price">
+                                    @String.Format("{0:F}", item.Product.Price) zł
+                                </td>
+                                <td class="quantity">
+                                    @String.Format("{0}", item.Quantity)
+                                </td>
+                                <td class="price">
+                                    @String.Format("{0:F}", item.Product.Price*item.Quantity) zł
+                                </td>
+                                <td>
+                                    <a asp-action="RemoveFromCart" asp-controller="Cart" asp-route-id="@item.IdCartItem" class="btn btn-primary btn-outline-primary">Usuń</a>
+                
+                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+<div class="row justify-content-end">
+    <div class="col col-lg-3 col-md-6 mt-5 cart-wrap ftco-animate">
+        <div class="cart-total mb-3">
+            <h3>Podsumowanie</h3>
+            <p class="d-flex">
+                <span>Produkty</span>
+                <span>@String.Format("{0:F}", @Model.Total) zł</span>
+            </p>
+            <p class="d-flex">
+                <span>Dostawa</span>
+                <span>10,00 zł</span>
+            </p>
+            <hr>
+            <p class="d-flex total-price">
+                <span>Razem</span>
+                <span>@String.Format("{0:F}", @Model.Total+10) zł </span>
+            </p>
+        </div>
+        <p class="text-center"><a href="checkout.html" class="btn btn-primary py-3 px-4">Zamów</a></p>
+    </div>
+</div>
+</div>

@@ -1,0 +1,127 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CoffeeShop.Portal
+build_property.RootNamespace = CoffeeShop.Portal
+build_property.ProjectDir = E:\WSB_NLU_Informatyka\Rok 3\Semestr II\Programowanie internetowych aplikacji biznesowych\Projekt\CoffeeShop_final\CoffeeShop\CoffeeShop.Portal\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\WSB_NLU_Informatyka\Rok 3\Semestr II\Programowanie internetowych aplikacji biznesowych\Projekt\CoffeeShop_final\CoffeeShop\CoffeeShop.Portal
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/wwwroot/lib/contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d3d3cm9vdFxsaWJcY29udGFjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Home/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Home/Shop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG9wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shared/Backup layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEJhY2t1cCBsYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shared/Links.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExpbmtzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shared/Shop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNob3AuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shared/TrainingView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRyYWluaW5nVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shared/TypeMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFR5cGVNZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shared/_CartLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJ0TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shared/_NavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shared/_ShopLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaG9wTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shared/_TrainingLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UcmFpbmluZ0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shop/Components/TypeMenuComponent/TypeMenuComponent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxDb21wb25lbnRzXFR5cGVNZW51Q29tcG9uZW50XFR5cGVNZW51Q29tcG9uZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shop/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shop/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Training/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5pbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WSB_NLU_Informatyka/Rok 3/Semestr II/Programowanie internetowych aplikacji biznesowych/Projekt/CoffeeShop_final/CoffeeShop/CoffeeShop.Portal/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-jr0lhcj63m

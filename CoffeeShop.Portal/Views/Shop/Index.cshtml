@@ -1,0 +1,35 @@
+﻿@model IEnumerable<CoffeeShop.Database.Data.CMS.Product>
+@{
+    ViewData["Title"] = "Sklep";
+    Layout = "~/Views/Shared/_ShopLayout.cshtml";
+}
+
+                    <div class="col-md-12 d-flex align-items-center">
+
+                        <div class="tab-content ftco-animate" id="v-pills-tabContent">
+
+                            <div class="tab-pane fade show active" id="v-pills-0" role="tabpanel" aria-labelledby="v-pills-0-tab">
+                                <div class="row">
+                                @foreach (var product in Model)
+                                {
+                                    <div class="col-md-3">
+                                        <div class="menu-entry">
+                                            <div class="row">
+                                                <img src="@product.PhotoURL" style="block-size: 250px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="text text-center pt-4">
+                                            <h3>@Html.ActionLink(product.ProductName, "Details", "Shop", new{id=product.IdProduct}, null)</h3>
+                                            <p>@product.Description</p>
+                                            <p class="price"><span>@String.Format("{0:F}", product.Price) zł</span></p>
+                                            <p><a asp-action="AddToCart" asp-controller="Cart" asp-route-id="@product.IdProduct" class="btn btn-primary btn-outline-primary">Dodaj do koszyka</a></p>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                

@@ -1,0 +1,11 @@
+﻿@model IEnumerable<CoffeeShop.Database.Data.CMS.Page>
+<div class="nav-wrapper container">
+    <ul class="right hide-on-med-and-down">
+        @foreach (var item in Model)
+        {
+            <li>
+                @Html.ActionLink(item.LinkTitle, "Index","Home", new{id=item.IdPage}, null)
+            </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CoffeeShop.Database",
+    "\\CoffeeShop.Database\\Data",
+    "\\CoffeeShop.Intranet",
+    "\\CoffeeShop.Intranet\\Views",
+    "\\CoffeeShop.Intranet\\Views\\Shared"
+  ],
+  "SelectedNode": "\\CoffeeShop.Intranet\\Views\\Shared\\_Layout.cshtml",
+  "PreviewInSolutionExplorer": false
+}

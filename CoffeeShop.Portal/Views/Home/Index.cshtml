@@ -1,0 +1,121 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+ <section class="home-slider owl-carousel">
+        <div class="slider-item" style="background-image: url(images/bg_1.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+                    <div class="col-md-8 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">WITAJ</span>
+                        <h1 class="mb-4">Witaj u Zafusowanych!</h1>
+                        <p class="mb-4 mb-md-5">Najlepszej jakości kawa premium oraz szkolenia dla baristów.</p>
+                    <p><a asp-controller="Training" asp-action="Index" class="btn btn-primary p-3 px-xl-4 py-xl-3">Szkolenia</a> <a asp-controller="Shop" asp-action="Index" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Produkty</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item" style="background-image: url(images/bg_2.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+            <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+                <div class="col-md-8 col-sm-12 text-center ftco-animate">
+                    <span class="subheading">WITAJ</span>
+                    <h1 class="mb-4">Witaj u Zafusowanych!</h1>
+                    <p class="mb-4 mb-md-5">Najlepszej jakości kawa premium oraz szkolenia dla baristów.</p>
+                    <p><a asp-controller="Training" asp-action="Index" class="btn btn-primary p-3 px-xl-4 py-xl-3">Szkolenia</a> <a asp-controller="Shop" asp-action="Index" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Produkty</a></p>
+                </div>
+
+                </div>
+            </div>
+            </div>
+
+        <div class="slider-item" style="background-image: url(images/bg_3.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+                    <div class="col-md-8 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">WITAJ</span>
+                        <h1 class="mb-4">Witaj u Zafusowanych!</h1>
+                        <p class="mb-4 mb-md-5">Najlepszej jakości kawa premium oraz szkolenia dla baristów.</p>
+                    <p><a asp-controller="Training" asp-action="Index" class="btn btn-primary p-3 px-xl-4 py-xl-3">Szkolenia</a> <a asp-controller="Shop" asp-action="Index" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Produkty</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-intro">
+        <div class="container-wrap">
+            <div class="wrap d-md-flex align-items-xl-end">
+                <div class="info">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="icon"><span class="icon-phone"></span></div>
+                            <div class="text">
+                                <h3>+48 987 123 765</h3>
+                                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="icon"><span class="icon-my_location"></span></div>
+                            <div class="text">
+                                <h3>Ulicowa 12</h3>
+                                <p>	Miastowe, Polska</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="icon"><span class="icon-clock-o"></span></div>
+                            <div class="text">
+                                <h3>Poniedziałek-Piątek</h3>
+                                <p>8:00 - 20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="book p-4">
+                    <h3>Zarezerwuj szkolenie</h3>
+                    <form action="#" class="appointment-form">
+                        <div class="d-md-flex">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Imię">
+                            </div>
+                            <div class="form-group ml-md-4">
+                                <input type="text" class="form-control" placeholder="Nazwisko">
+                            </div>
+                        </div>
+                        <div class="d-md-flex">
+                            <div class="form-group">
+                                <div class="input-wrap">
+                                    <div class="icon"><span class="ion-md-calendar"></span></div>
+                                    <input type="text" class="form-control appointment_date" placeholder="Data">
+                                </div>
+                            </div>
+                            <div class="form-group ml-md-4">
+                                <div class="input-wrap">
+                                    <div class="icon"><span class="ion-ios-clock"></span></div>
+                                    <input type="text" class="form-control appointment_time" placeholder="Godzina">
+                                </div>
+                            </div>
+                            <div class="form-group ml-md-4">
+                                <input type="text" class="form-control" placeholder="Telefon">
+                            </div>
+                        </div>
+                        <div class="d-md-flex">
+                            <div class="form-group">
+                                <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Wiadomość"></textarea>
+                            </div>
+                            <div class="form-group ml-md-4">
+                                <input type="submit" value="Zapisz się" class="btn btn-white py-3 px-4">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
