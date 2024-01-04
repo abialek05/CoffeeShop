@@ -1,4 +1,4 @@
-![image](https://github.com/abialek05/CoffeeShop/assets/152793437/63ae509b-a6e2-436d-97af-d9dc4ab7a3a1)# Intranet and webshop for a coffee company
+# Intranet and webshop for a coffee company
 Project created for university assignment purposes. There are two main parts:
 - Intranet: internal use to manage content on the client-facing portal. CRUD operations, JavaScript graphs.
 - Webshop: client-facing portal. Browsing products, viewing details, adding to cart, editing number of items added from details and cart view, deleting items from cart.
