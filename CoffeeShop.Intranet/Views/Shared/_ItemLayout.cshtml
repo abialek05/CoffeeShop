@@ -52,10 +52,12 @@
                                     <span class="figure">
                                         <img src="~/lib/materialize/template/assets/images/faces/face10.jpg" alt="user" class="user">
                                     </span>
-                                    <span class="user-name">Anastazja Nowak</span>
+                                    <span class="user-name">Aleksandra Białek</span>
                                     </span>
                             </button>
-                            <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                            </div>
+                    </div>
+                            @* <div class="mdc-menu mdc-menu-surface" tabindex="-1">
                                 <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
                                     <li class="mdc-list-item" role="menuitem">
                                         <div class="item-thumbnail item-thumbnail-icon-only">
@@ -74,9 +76,9 @@
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> *@
                         </div>
-                        <div class="divider d-none d-md-block"></div>
+                        @* <div class="divider d-none d-md-block"></div>
                         <div class="menu-button-container d-none d-md-block">
                             <button class="mdc-button mdc-menu-button">
                                 <i class="mdi mdi-settings"></i>
@@ -147,8 +149,8 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="menu-button-container">
+                        </div> *@
+                       @*  <div class="menu-button-container">
                             <button class="mdc-button mdc-menu-button">
                                 <i class="mdi mdi-email"></i>
                                 <span class="count-indicator">
@@ -187,8 +189,8 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="menu-button-container d-none d-md-block">
+                        </div> *@
+                       @*  <div class="menu-button-container d-none d-md-block">
                             <button class="mdc-button mdc-menu-button">
                                 <i class="mdi mdi-arrow-down-bold-box"></i>
                             </button>
@@ -214,25 +216,23 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> *@
             </header>
             <div class="page-wrapper mdc-toolbar-fixed-adjust">
                 <main class="content-wrapper">
                     <div class="mdc-layout-grid">
                         <div class="mdc-layout-grid__inner" >
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12" style="margin-right: 30px">
-                                <div class="mdc-card p-0" style="margin-left:20px; margin-right: 20px">
-                                    <h6 class="card-title card-padding pb-0"style="margin-left:20px; margin-right: 20px"></h6>
-                                    <div class="table-responsive"style="margin-left:20px; padding-right: 40px">
+                                <div class="mdc-card p-0">
                                        
                                             @RenderBody()
-                                        
+
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </div>                    
                 </main>
+            </div>
             <!-- partial -->
             <!-- partial:partials/_Footer.cshtml -->
             <partial name="_Footer" />

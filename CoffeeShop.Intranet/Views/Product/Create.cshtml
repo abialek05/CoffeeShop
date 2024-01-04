@@ -5,8 +5,8 @@
     Layout = "~/Views/Shared/_ItemLayout.cshtml";
 }
 
-<h1>Dodaj produkt</h1>
-<div class="row">
+<div class="row" style="padding: 20px;">
+    <h4>Nowy produkt</h4>
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -64,15 +64,14 @@
                 </label>
             </div>
             <div class="form-group" style="margin-top:30px">
-                <input type="submit" value="Dodaj" class="mdc-button mdc-button--raised filled-button--light" />
+                <input type="submit" value="Dodaj" class="mdc-button mdc-button--raised filled-button--light" /> |
+                <a asp-action="Index" class="mdc-button mdc-button--raised filled-button--light">Back to List</a>
+
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index" class="mdc-button mdc-button--outlined outlined-button--dark mdc-ripple-upgraded">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

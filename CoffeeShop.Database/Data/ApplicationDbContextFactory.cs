@@ -13,7 +13,7 @@ namespace CoffeeShop.Database.Data
         public CoffeeShopContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<CoffeeShopContext>();
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=CoffeeShop;Trusted_Connection=True;MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer("Server=tcp:celestique.database.windows.net,1433;Initial Catalog=CoffeeShop;Persist Security Info=False;User ID=CloudSAf8ee2393;Password=@Liscnieb052011;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             return new CoffeeShopContext(optionsBuilder.Options);
         }
     }

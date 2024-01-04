@@ -11,26 +11,26 @@
     <div class="col-md-4">
         <form>
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdProductType" />
             <div class="mdc-text-field">
                 <label asp-for="TypeName" class="mdc-floating-label"></label>
-                <input asp-for="TypeName" class="mdc-text-field__input" id="text-field-hero-input" />
+                <input asp-for="TypeName" class="mdc-text-field__input" id="text-field-hero-input" readonly />
                 <span asp-validation-for="TypeName" class="text-danger"></span>
             </div>
             <div class="mdc-text-field" style="margin-top:30px">
                 <label asp-for="Description" class="mdc-floating-label"></label>
-                <input asp-for="Description" class="mdc-text-field__input" id="text-field-hero-input" />
+                <input asp-for="Description" class="mdc-text-field__input" id="text-field-hero-input" readonly />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group form-check" style="margin-top:30px">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="IsActive" /> @Html.DisplayNameFor(model => model.IsActive)
+                    <input class="form-check-input" asp-for="IsActive" readonly /> @Html.DisplayNameFor(model => model.IsActive)
                 </label>
-            </div>
-           
+            </div>           
         </form>
     </div>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.IdProductType">Edytuj</a> |
-    <a asp-action="Index" class="mdc-button mdc-button--outlined outlined-button--dark mdc-ripple-upgraded">Powrót do listy</a>
+    <div style="margin-top: 30px;">
+        <a asp-action="Index" class="mdc-button mdc-button--raised filled-button--light">Powrót do listy</a>
+    </div>
+
 </div>

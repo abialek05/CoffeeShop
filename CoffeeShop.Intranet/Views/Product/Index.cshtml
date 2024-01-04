@@ -5,12 +5,12 @@
     Layout = "~/Views/Shared/_ItemLayout.cshtml";
 }
 
-<h1>Produkty</h1>
 
-<p>
-    <a asp-action="Create">Stwórz nowy</a>
-</p>
-<table class="table">
+<div style="padding: 20px;">
+    <h1 style="margin-bottom: 30px;">Lista produktów</h1>
+    <a asp-action="Create" class="mdc-button mdc-button--raised filled-button--light">Dodaj nowy produkt</a>
+</div>
+<table class="table" style="padding: 20px;">
     <thead style="text-align:center">
         <tr>
             <th style="text-align:center">

@@ -4,12 +4,12 @@
     ViewData["Title"] = "Delete";
     Layout = "~/Views/Shared/_ItemLayout.cshtml";
 }
-
+<div style="padding: 20px">
 <h1>Usuwanie</h1>
 
-<h3>Jesteś pewien, że chcesz to usunąć?</h3>
+<h3>Jesteś pewien, że chcesz usunąć ten produkt??</h3>
 <div>
-    <h4>Typ produktu</h4>
+    <h4>Nazwa produktu:</h4>
     <h4>@Html.DisplayFor(model => model.ProductName)</h4>
     <hr />
 
@@ -18,4 +18,5 @@
         <input type="submit" value="Usuń" class="mdc-button mdc-button--outlined outlined-button--secondary mdc-ripple-upgraded" /> |
         <a asp-action="Index" class="mdc-button mdc-button--outlined outlined-button--dark mdc-ripple-upgraded">Powrót do listy</a>
     </form>
+</div>
 </div>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/ARYbZ3CgpEQevUc4yfQ3QeksvWz5gESyPYp/vHzIQcYvNODgwP1iGvwK4NzR2D2KlKY6zHdW2f/UiBhY6D/Cg==",
+  "dgSpecHash": "7ppOO1vDjN1guHGcpky1YaE/3DoWBoOunEuDDud1Djob/a8M16rEAUdbcOzdiA/eHL9yk8GDUj/CxUNOqD8d/w==",
   "success": true,
-  "projectFilePath": "E:\\WSB_NLU_Informatyka\\Rok 3\\Semestr II\\Programowanie internetowych aplikacji biznesowych\\Projekt\\CoffeeShop_final\\CoffeeShop\\CoffeeShop.Database\\CoffeeShop.Database.csproj",
+  "projectFilePath": "C:\\Users\\abial\\Desktop\\Nowy folder (3)\\CoffeeShop\\CoffeeShop.Database\\CoffeeShop.Database.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abial\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\abial\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

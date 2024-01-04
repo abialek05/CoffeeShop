@@ -20,32 +20,31 @@
 </head>
 <body>
 
-    <h4>Szkolenie</h4>
-    <hr />
-    <div class="row">
+    <div class="row" style="padding: 20px;">
+        <h4>Szczegóły</h4>
         <div class="col-md-4">
             <form asp-action="Create">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
                 <div class="mdc-text-field">
-                    <input asp-for="TrainingName" class="mdc-text-field__input" id="text-field-hero-input" />
+                    <input asp-for="TrainingName" class="mdc-text-field__input" id="text-field-hero-input" readonly />
                     <div class="mdc-line-ripple"></div>
                     <label asp-for="TrainingName" class="mdc-floating-label"></label>
                     <span asp-validation-for="TrainingName" class="text-danger"></span>
                 </div>
                 <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop" style="margin-top:10px">
                     <label asp-for="StartDate" class="control-label" style="padding: 10px"></label>
-                    <input asp-for="StartDate" id="datepicker" />
+                    <input asp-for="StartDate" id="datepicker" readonly />
                     <span asp-validation-for="StartDate" class="text-danger"></span>
                 </div>
                 <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop" style="margin-top:10px">
                     <label asp-for="EndDate" class="control-label" style="padding: 10px; vertical-align: central"></label>
-                    <input asp-for="EndDate" class="mdi-box" />
+                    <input asp-for="EndDate" class="mdi-box" readonly />
                     <span asp-validation-for="EndDate" class="text-danger"></span>
                 </div>
                 <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4-desktop">
                     <div class="mdc-text-field">
-                        <input asp-for="Price" class="mdc-text-field__input" id="text-field-hero-input" />
+                        <input asp-for="Price" class="mdc-text-field__input" id="text-field-hero-input" readonly />
                         <div class="mdc-line-ripple"></div>
                         <label asp-for="Price" class="mdc-floating-label"></label>
                         <span asp-validation-for="Price" class="text-danger"></span>
@@ -53,7 +52,7 @@
                 </div>
                 <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4-desktop">
                     <div class="mdc-text-field" style="margin-top:20px">
-                        <input asp-for="Spots" class="mdc-text-field__input" id="text-field-hero-input" />
+                        <input asp-for="Spots" class="mdc-text-field__input" id="text-field-hero-input" readonly />
                         <div class="mdc-line-ripple"></div>
                         <label asp-for="Spots" class="mdc-floating-label"></label>
                         <span asp-validation-for="Spots" class="text-danger"></span>
@@ -64,7 +63,7 @@
                         <input type="checkbox"
                                id="basic-disabled-checkbox"
                                class="mdc-checkbox__native-control"
-                               checked asp-for="IsActive" />
+                               checked asp-for="IsActive" readonly />
                         <div class="mdc-checkbox__background">
                             <svg class="mdc-checkbox__checkmark"
                                  viewBox="0 0 24 24">
@@ -77,8 +76,7 @@
                     </div>
                     <label for="basic-disabled-checkbox" id="basic-disabled-checkbox-label">@Html.DisplayNameFor(model => model.IsActive)</label>
                 </div>
-                <div class="form-group">
-                    <a asp-action="Edit" asp-route-id="@Model?.IdTraining" class="mdc-button mdc-button--raised filled-button--light">Edytuj</a> |
+                <div class="form-group" style="margin-top: 30px;">
                     <a asp-action="Index" class="mdc-button mdc-button--raised filled-button--light">Powrót do listy</a>
                 </div>
             </form>

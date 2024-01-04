@@ -3604,11 +3604,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\WSB_NLU_Informatyka\\Rok 3\\Semestr II\\Programowanie internetowych aplikacji biznesowych\\Projekt\\CoffeeShop_final\\CoffeeShop\\CoffeeShop.Database\\CoffeeShop.Database.csproj",
+      "projectUniqueName": "C:\\Users\\abial\\Desktop\\Nowy folder (3)\\CoffeeShop\\CoffeeShop.Database\\CoffeeShop.Database.csproj",
       "projectName": "CoffeeShop.Database",
-      "projectPath": "E:\\WSB_NLU_Informatyka\\Rok 3\\Semestr II\\Programowanie internetowych aplikacji biznesowych\\Projekt\\CoffeeShop_final\\CoffeeShop\\CoffeeShop.Database\\CoffeeShop.Database.csproj",
+      "projectPath": "C:\\Users\\abial\\Desktop\\Nowy folder (3)\\CoffeeShop\\CoffeeShop.Database\\CoffeeShop.Database.csproj",
       "packagesPath": "C:\\Users\\abial\\.nuget\\packages\\",
-      "outputPath": "E:\\WSB_NLU_Informatyka\\Rok 3\\Semestr II\\Programowanie internetowych aplikacji biznesowych\\Projekt\\CoffeeShop_final\\CoffeeShop\\CoffeeShop.Database\\obj\\",
+      "outputPath": "C:\\Users\\abial\\Desktop\\Nowy folder (3)\\CoffeeShop\\CoffeeShop.Database\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

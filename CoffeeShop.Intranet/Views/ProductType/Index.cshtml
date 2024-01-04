@@ -4,12 +4,12 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_ItemLayout.cshtml";
 }
+<div style="padding: 20px;">
+   
+        <h1 style="margin-bottom: 30px;">Lista typów produktu</h1>
+        <a asp-action="Create" class="mdc-button mdc-button--raised filled-button--light">Dodaj nowy typ</a>
+    
 
-<h1>Typy produktów</h1>
-
-<p>
-    <a asp-action="Create">Dodaj nowy</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -38,11 +38,12 @@
                 @Html.DisplayFor(modelItem => item.IsActive)
             </td>
             <td style="text-align:center">
-                <a asp-action="Edit" asp-route-id="@item.IdProductType">Edytuj</a> |
-                <a asp-action="Details" asp-route-id="@item.IdProductType">Szczegóły</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdProductType">Usuń</a>
-            </td>
+@*                 <a asp-action="Edit" asp-route-id="@item.IdProductType">Edytuj</a> |
+ *@                <a asp-action="Details" asp-route-id="@item.IdProductType">Szczegóły</a>
+@*                 <a asp-action="Delete" asp-route-id="@item.IdProductType">Usuń</a>
+ *@            </td>
         </tr>
 }
     </tbody>
-</table>
+    </table>
+</div>

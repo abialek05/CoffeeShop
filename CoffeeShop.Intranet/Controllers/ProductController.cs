@@ -37,15 +37,13 @@ namespace CoffeeShop.Intranet.Controllers
                 return NotFound();
             }
 
-            var product = await _context.Product
-                .Include(p => p.GrindLevel)
-                .Include(p => p.ProductType)
-                .FirstOrDefaultAsync(m => m.IdProduct == id);
+            var product = await _context.Product.FindAsync(id);
             if (product == null)
             {
                 return NotFound();
             }
-
+            ViewData["GrindLevelId"] = new SelectList(_context.GrindLevel, "IdGrindLevel", "Description", product.GrindLevelId);
+            ViewData["ProductTypeId"] = new SelectList(_context.ProductType, "IdProductType", "Description", product.ProductTypeId);
             return View(product);
         }
 
